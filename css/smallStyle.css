@@ -1,0 +1,205 @@
+@media screen and (max-width: 600px){
+
+    :root{
+        --headercolor:#2b5968;
+        --bodycolor:#ecf0f0;
+        --headerfontcolor: #ddd;
+        --bodyfontcolor: #555;
+        --border:#aaa;
+        --headerh1: #fff;
+    
+        font-family: 'Poppins', FontAwesome,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    *{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    header{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: var(--headercolor);
+        color: var(--headerfontcolor);
+
+    }
+
+    header img{
+        max-width: 10rem;
+        max-height: 10rem;
+        margin: 5% 0;
+        border-radius: 50% !important;
+        overflow: hidden;
+        background-color: #fff;
+        border: 0.5rem solid var(--headerfontcolor);
+    }
+
+    header img{
+        vertical-align:middle;
+    }
+
+    header h1{
+        color: var(--headerh1);
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 1.2rem;
+    }
+
+    header a{
+        text-transform: none;
+        text-decoration: none;
+        color: var(--headerfontcolor);
+        margin: 1% 0;
+    }
+
+    header .socials{
+        display: flex;
+        flex-direction: row;
+        margin: 5% 0;
+    }
+
+    header .socials a{
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    header .socials a:hover{
+        color: #fff;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+        background-color:var(--bodycolor);
+        color: var(--bodyfontcolor);
+        padding: 2%;
+    }
+
+    main div#title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: .5rem;
+    }
+
+    main div#title h1{
+        text-align: center;
+        font-size: 8vw;
+    }
+    main p#subtitle{
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    main .card{
+        width: 100%;
+        border-bottom: 1px solid var(--border);
+        margin: .5rem 0;
+        padding: 0;
+    }
+
+    #box-toggle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #box-toggle span{
+        width: 100%;
+    }
+
+    #box-toggle span:hover{ cursor:pointer; color:var(--headercolor)}
+    
+    main span h2, main .card h2{
+        background-color: #dfdfdf;
+        width: 100%;
+        margin: .2rem 0;
+        padding: .5rem;
+        font-size: 1.3rem;
+    }
+
+    main .card h3{
+        background-color: #dfdfdf55;
+        font-size: .9rem;
+        padding: 0 .5rem;
+    }
+
+    main .card h4{
+        background-color: #dfdfdf55;
+        font-size: .8rem;
+        padding: 0 .5rem;
+    }
+    main .card h5{
+        background-color: #dfdfdf55;
+        font-size: .8rem;
+        padding: .5rem .5rem 0 .5rem;
+    }
+    main .card p{
+        font-size: .9rem;
+        padding: .5rem;
+    }
+    main .card-itens{
+        margin: .5rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+    main .card-itens:last-of-type, div .complementar{
+        border: none;
+    }
+
+    main .competencias{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:start;
+        margin: 1rem;
+        padding: .5rem 0;
+        border-bottom:1px dashed var(--border);
+    }
+
+    p.skills{
+        background-color: #dfdfdf;
+        border-radius: 15rem !important;
+        margin: .5rem;
+    }
+
+    p.skills:hover{
+        background-color: var(--headercolor);
+        color: var(--headerfontcolor);
+    }
+
+    #info-complementar a{
+        color: var(--bodyfontcolor);
+    }
+    
+    #info-complementar a:hover {
+        color: var(--headercolor);
+    }
+
+    .footer{
+        width: 100%;
+        text-align:right;
+        margin: 1rem 0;
+    }
+}
