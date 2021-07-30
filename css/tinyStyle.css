@@ -136,6 +136,10 @@
 
     #box-toggle span:hover{ cursor:pointer; color:var(--headercolor)}
     
+    #box-toggle .tgl, #box-toggle .tgl2, #box-toggle .tgl3, #box-toggle .tgl4, #box-toggle .tgl5{
+        border-left: 2px solid var(--headercolor);
+    }
+
     main span{
         background-color: #dfdfdf;
         width: 100%;
