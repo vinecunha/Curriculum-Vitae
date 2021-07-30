@@ -24,6 +24,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
+        background-color: var(--bodycolor);
     }
 
     header{
@@ -102,7 +103,7 @@
 
     main div#title h1{
         text-align: center;
-        font-size: 8vw;
+        font-size: 8.5vw;
     }
     main p#subtitle{
         width: 100%;
@@ -113,9 +114,13 @@
 
     main .card{
         width: 100%;
-        border-bottom: 1px solid var(--border);
-        margin: .5rem 0;
-        padding: 0;
+        border: 1px solid #ddd;
+        padding: .5rem;
+        margin: .1rem 0;
+    }
+    
+    main #resumo{
+        border: none;
     }
 
     #box-toggle{
@@ -131,11 +136,20 @@
 
     #box-toggle span:hover{ cursor:pointer; color:var(--headercolor)}
     
-    main span h2, main .card h2{
+    main span{
         background-color: #dfdfdf;
         width: 100%;
         margin: .2rem 0;
         padding: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    main span h2{
+        width: 100%;
         font-size: 1rem;
     }
 
@@ -189,11 +203,11 @@
         color: var(--headerfontcolor);
     }
 
-    #info-complementar a{
+    #info-complementar a, .complementar a{
         color: var(--bodyfontcolor);
     }
     
-    #info-complementar a:hover {
+    #info-complementar a:hover, .complementar a:hover {
         color: var(--headercolor);
     }
 
