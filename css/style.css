@@ -103,7 +103,7 @@ main div#title{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: .5rem;
+    margin: .5rem 0;
 }
 
 main div#title h1{
