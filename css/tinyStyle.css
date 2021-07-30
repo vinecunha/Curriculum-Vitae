@@ -172,6 +172,7 @@
     main .card p{
         font-size: .9rem;
         padding: .5rem;
+        text-align: justify;
     }
     main .card-itens{
         margin: .5rem 0;
